@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <title>Quiz: Carlos Santana (YouTuber)</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    body{
+      font-family:Arial,Helvetica,sans-serif;
+      max-width:900px;
+      margin:20px auto;
+      padding:10px;
+      background:linear-gradient(135deg,#ffdede,#ffe8ff,#ddf0ff,#e8ffe8);
+      background-size:400% 400%;
+      animation:bgmove 12s ease infinite;
+    }
+    @keyframes bgmove{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+    .card{
+      border-radius:14px;
+      border:1px solid #fff6;
+      padding:18px;
+      margin:16px 0;
+      background:#ffffffcc;
+      box-shadow:0 3px 10px rgba(0,0,0,0.08);
+    }
+    img{max-width:100%;border-radius:10px;margin-bottom:8px;}
+    .q{font-weight:700;margin-top:8px;font-size:1.1rem;}
+    .answers button{
+      display:block;width:100%;margin:6px 0;padding:12px;
+      border-radius:8px;border:1px solid #ccc;background:#fafafa;
+      cursor:pointer;text-align:left;font-size:1rem;transition:0.2s;
+    }
+    .answers button:hover{background:#f0f0f0;}
+    .answers button.correct{border-color:green;background:#eaffea;}
+    .answers button.wrong{border-color:red;background:#ffeaea;}
+    #result{
+      padding:12px;margin-top:10px;border-radius:10px;
+      text-align:center;font-size:1.2rem;font-weight:bold;
+    }
+    #ranking{
+      display:none;margin-top:20px;padding:20px;border-radius:12px;
+      background:#ffffffdd;text-align:center;font-size:1.2rem;
+      box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    }
+    .small{font-size:0.9em;color:#444;}
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center;">Quiz: Carlos Santana (YouTuber)</h1>
+  <p class="small" style="text-align:center;">Imagens são thumbnails públicas do canal.</p>
+
+  <!-- QUESTIONS -->
+  <div id="quiz-area">
+
+    <!-- 10 TOTAL QUESTIONS -->
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/Xa5E_FD_BMw/hqdefault.jpg">
+      <div class="q">1) Em que idade Carlos começou a fazer vídeos?</div>
+      <div class="answers" data-correct="13">
+        <button data-answer="11">11 anos</button>
+        <button data-answer="13">13 anos</button>
+        <button data-answer="16">16 anos</button>
+        <button data-answer="20">20 anos</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/3PKJxd6qwnQ/hqdefault.jpg">
+      <div class="q">2) Qual é o handle do canal dele no YouTube?</div>
+      <div class="answers" data-correct="@IamCarlosSantana">
+        <button data-answer="@IamCarlosSantana">@IamCarlosSantana</button>
+        <button data-answer="@CarlosSantanaBR">@CarlosSantanaBR</button>
+        <button data-answer="@SantanaOficial">@SantanaOficial</button>
+        <button data-answer="@CarlosYT">@CarlosYT</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/dGgGpqPrjqA/hqdefault.jpg">
+      <div class="q">3) Aproximadamente quantos inscritos ele tem (2025)?</div>
+      <div class="answers" data-correct="3.4M">
+        <button data-answer="1M">1M</button>
+        <button data-answer="2M">2M</button>
+        <button data-answer="3.4M">3.4M</button>
+        <button data-answer="5M">5M</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/J95YhfVt0n4/hqdefault.jpg">
+      <div class="q">4) Segundo matérias, ele é associado a qual cidade?</div>
+      <div class="answers" data-correct="Campo Grande">
+        <button data-answer="Curitiba">Curitiba</button>
+        <button data-answer="Campo Grande">Campo Grande</button>
+        <button data-answer="Fortaleza">Fortaleza</button>
+        <button data-answer="Porto Alegre">Porto Alegre</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/6H7N4A0oAIw/hqdefault.jpg">
+      <div class="q">5) Qual estilo de conteúdo ele costuma postar?</div>
+      <div class="answers" data-correct="Vlogs e IRL">
+        <button data-answer="Gaming">Gaming</button>
+        <button data-answer="Vlogs e IRL">Vlogs e IRL</button>
+        <button data-answer="Podcasts">Podcasts</button>
+        <button data-answer="Notícias">Notícias</button>
+      </div>
+    </div>
+
+    <!-- NEW QUESTIONS -->
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/VVbQm8fE20c/hqdefault.jpg">
+      <div class="q">6) Qual tema aparece bastante nos vídeos recentes dele?</div>
+      <div class="answers" data-correct="Interações com pessoas na rua">
+        <button data-answer="Receitas caseiras">Receitas caseiras</button>
+        <button data-answer="Interações com pessoas na rua">Interações com pessoas na rua</button>
+        <button data-answer="Reações a memes antigos">Reações a memes antigos</button>
+        <button data-answer="Reviews de produtos caros">Reviews de produtos caros</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/y2ZQF-OMkDQ/hqdefault.jpg">
+      <div class="q">7) Qual é a personalidade mais marcante dele nos vídeos?</div>
+      <div class="answers" data-correct="Humor espontâneo e caótico">
+        <button data-answer="Muito sério e calmo">Muito sério e calmo</button>
+        <button data-answer="Humor espontâneo e caótico">Humor espontâneo e caótico</button>
+        <button data-answer="Tímido e reservado">Tímido e reservado</button>
+        <button data-answer="Provocador e agressivo">Provocador e agressivo</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/LgOgWY9ZP8M/hqdefault.jpg">
+      <div class="q">8) Ele costuma gravar mais:</div>
+      <div class="answers" data-correct="Na rua / lugares públicos">
+        <button data-answer="Dentro de estúdios">Dentro de estúdios</button>
+        <button data-answer="Na rua / lugares públicos">Na rua / lugares públicos</button>
+        <button data-answer="Em shows e eventos musicais">Em shows e eventos musicais</button>
+        <button data-answer="Em aeroportos">Em aeroportos</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/W9FjE4Divide/hqdefault.jpg">
+      <div class="q">9) Ele costuma colaborar com:</div>
+      <div class="answers" data-correct="Outros criadores de conteúdo de IRL">
+        <button data-answer="Empresas de tecnologia">Empresas de tecnologia</button>
+        <button data-answer="Atores de novela">Atores de novela</button>
+        <button data-answer="Outros criadores de conteúdo de IRL">Outros criadores de conteúdo de IRL</button>
+        <button data-answer="Cantores sertanejos">Cantores sertanejos</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://img.youtube.com/vi/XCzQZkHUpFI/hqdefault.jpg">
+      <div class="q">10) O que descreve melhor o estilo de gravação dele?</div>
+      <div class="answers" data-correct="Espontâneo, rápido e improvisado">
+        <button data-answer="Planejado com roteiro completo">Planejado com roteiro completo</button>
+        <button data-answer="Muito técnico e cinematográfico">Muito técnico e cinematográfico</button>
+        <button data-answer="Espontâneo, rápido e improvisado">Espontâneo, rápido e improvisado</button>
+        <button data-answer="Focado em entrevistas formais">Focado em entrevistas formais</button>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="result" class="card" style="display:none"></div>
+
+  <div id="ranking">
+    <h2>Ranking Final</h2>
+    <p id="rank-text"></p>
+  </div>
+
+  <script>
+    const groups = document.querySelectorAll('.answers');
+    let score = 0, total = groups.length;
+
+    groups.forEach(g=>{
+      g.addEventListener('click', e=>{
+        const b = e.target.closest('button');
+        if(!b) return;
+        const correct = g.dataset.correct;
+        const ans = b.dataset.answer;
+
+        [...g.querySelectorAll('button')].forEach(x=>x.disabled = true);
+
+        if(ans === correct){
+          b.classList.add('correct');
+          score++;
+        } else {
+          b.classList.add('wrong');
+          const right = [...g.querySelectorAll('button')].find(x=>x.dataset.answer===correct);
+          if(right) right.classList.add('correct');
+        }
+
+        if([...document.querySelectorAll('.answers button')].every(x=>x.disabled)){
+          const r = document.getElementById('result');
+          r.style.display = 'block';
+          r.innerHTML = "Você acertou " + score + " de " + total + "!";
+
+          const rk = document.getElementById('ranking');
+          const rtxt = document.getElementById('rank-text');
+          rk.style.display = 'block';
+
+          if(score === total){
+            rtxt.innerHTML = "🔥 <b>Parabéns!</b> Você entrou no topo do ranking como <b>Miguel Cururu (Criador do Quiz)</b>!";
+          } else if(score >= total * 0.7){
+            rtxt.innerHTML = "Muito bom! Você ficou no nível Ouro!";
+          } else if(score >= total * 0.4){
+            rtxt.innerHTML = "Boa! Você ficou no nível Prata.";
+          } else {
+            rtxt.innerHTML = "Continue tentando! Nível Bronze.";
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>
